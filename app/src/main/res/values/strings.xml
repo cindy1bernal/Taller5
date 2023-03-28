@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="activity1">1</string>
+    <string name="activity2">2</string>
+    <string name="activity3">3</string>
+    <string name="activity4">4</string>
+</resources>
