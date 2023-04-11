@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-
-
+    ImageButton btn_ubicacion;
     private  Button miBoton;
+
     private EditText etValor;
 
     @Override
@@ -26,12 +27,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {cambiarPantalla();}
         });*/
-
+        btn_ubicacion= (ImageButton) findViewById(R.id.btn_ubicacion);
+        btn_ubicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent btn_ubicacion = new Intent(MainActivity.this,MainActivity5.class);
+                startActivity( btn_ubicacion);
+            }
+        });
     }
     public void cambiarPantalla(){
         Intent miIntent1 = new Intent(this,MainActivity.class);
         startActivity(miIntent1);
-
     }
 
     public void funcionBoton(View view){
